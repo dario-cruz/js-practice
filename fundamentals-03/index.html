@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>JS Fundamentals 03</title>
+    </head>
+    <script>
+        // Function that takes a number and returned that number plus 7.
+        function add7(num) {
+            return num += 7;
+        }
+        // Arrow function version.
+        let arrowAdd7 = (num) => num += 7;
+
+
+        //Function that takes two numbers and returns multiplicaton product.
+        function multiply(a, b) {
+            return a * b;
+        }
+        // Arrow function version.
+        let arrowMulti = (a, b) => a * b;
+
+        // Function that outputs the last char in a string.
+        function lastChar(string) {
+            let text = string;
+            return text.charAt(text.length-1);
+        }
+
+        //Function to Capitalize the first letter of a string.
+        function capString(string) {
+            return string.charAt(0).toUpperCase() + string.slice(1);
+        }
+        // Had to do some research on stackoverflow to get an idea of how to solve this one.
+        // Code takes the first char of the string and Caps it. Adds it to old string minus first character and then outputs. 
+    </script>
+</html>
