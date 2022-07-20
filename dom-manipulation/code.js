@@ -47,3 +47,16 @@ btn4.addEventListener('click', alertFunction);
 function alertFunction() {
     alert("This is an alert from\nthe alertFunction!");
 }
+
+
+// Code for 3rd div in html.
+// Contains 3 buttons that we are going to iterate throuh.
+// We are going to use the selector querySelecterAll.
+
+// const div3 = document.querySelector('#containter3');
+const div3Buttons = document.querySelectorAll("button.c3b1, button.c3b2, button.c3b3");
+div3Buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        alert(button.id);
+    });
+});
