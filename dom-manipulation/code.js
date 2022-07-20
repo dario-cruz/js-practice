@@ -32,10 +32,18 @@ container.appendChild(divCreate);
 
 // Event listener Method 2
 const btn2 = document.querySelector('#btn2');
-btn.onclick = () => alert("Hello World");
+btn2.onclick = () => alert("Hello World");
 
 // Event Listener Method 3
 const btn3 = document.querySelector('#btn3');
-btn.addEventListener('click', () => {
+btn3.addEventListener('click', () => {
     alert("Hello World");
-})
+});
+ 
+// Named functions can be used with event listeners. 
+// Below is an example of a function being called.
+const btn4 = document.querySelector('#btn4');
+btn4.addEventListener('click', alertFunction);
+function alertFunction() {
+    alert("This is an alert from\nthe alertFunction!");
+}
