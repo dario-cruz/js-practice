@@ -54,7 +54,7 @@ function alertFunction() {
 // We are going to use the selector querySelecterAll.
 
 // const div3 = document.querySelector('#containter3');
-const div3Buttons = document.querySelectorAll("button.c3b1, button.c3b2, button.c3b3");
+const div3Buttons = document.querySelectorAll("#container3 > button");
 div3Buttons.forEach((button) => {
     button.addEventListener('click', () => {
         alert(button.id);
